@@ -97,7 +97,6 @@ header .roundpoint{
     header .navbar {
         background-color: var(--white);
     }
-<<<<<<< HEAD
     header .navbar-toggler {
         border: none;
     }
@@ -113,6 +112,4 @@ header .roundpoint{
         color: var(--light-black);
         padding: 1rem !important;
     }
-=======
->>>>>>> cf9b94b4ef07f03d57ecdd2d36b6f97217bf7d75
 }
