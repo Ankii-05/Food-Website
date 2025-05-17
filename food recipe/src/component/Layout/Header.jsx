@@ -14,8 +14,8 @@ const Header = () => {
             <Link className='logo' to="/">
             <img src={Logo} alt="Logo" className='img-fluid' /></Link>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
-          <Navbar.Collapse id='responsive-navbar-nav'/>
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto">
             <Nav.Link as={Link} to="/">
               Home
@@ -44,7 +44,7 @@ const Header = () => {
             
             
           </Nav>
-          <Navbar.Collapse/>
+          </Navbar.Collapse>
         </Container>
       </Navbar>
     </header>
