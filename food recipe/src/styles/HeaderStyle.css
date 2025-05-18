@@ -60,8 +60,7 @@ header .nav-link{
     -moz-transition: all 15ms ease-in-out ;
     transition: all 15ms ease-in-out;   
 }
-
-haeder .sticky .nav-link{
+header .sticky .nav-link{
     color: var(--light-black);
 }
 header .nav-link:hover{
