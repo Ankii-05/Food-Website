@@ -1,5 +1,6 @@
 import React from 'react'
-import { Container, Row, Col, Card } from 'react-bootstrap'
+import '../../styles/section3.css'
+import { Container, Row, Col} from 'react-bootstrap'
 import Image1 from '../../assets/images/menu/burger-11.jpg'
 import Image2 from '../../assets/images/menu/burger-12.jpg'
 import Image3 from '../../assets/images/menu/burger-13.jpg'
@@ -9,6 +10,7 @@ import Image6 from '../../assets/images/menu/burger-16.jpg'
 import Image7 from '../../assets/images/menu/burger-17.jpg'
 import Image8 from '../../assets/images/menu/burger-18.jpg'
 import Cards from '../../component/Layout/Cards'
+import { Link } from 'react-router-dom'
 function Section3() {
     // Mock Data Cards
 const mockData = [
@@ -78,13 +80,34 @@ const mockData = [
   },
   // Add more mock data objects as needed
 ];
+
+// Rating Logic
+
+const renderRatingIcons = (rating) =>{
+  const star =[];
+  for(let i=0;i<5;i++){
+    if(rating > 0.5 ){
+      star.push(<i key={i} className='bi bi-star-fill'></i>)
+      rating--;
+    }
+    else if(rating > 0 && rating <1){
+      star.push(<i key={"half"} className='bi bi-star-half'></i>)
+      rating--;
+    }
+    else{
+      star.push(<i key={`empty${i}`} className='bi bi-star'></i>)
+      rating--;
+    }
+  }
+  return star;
+}
   return (
-    <section className='menu_section text-center'>
+    <section className='menu_section'>
         <Container>
             <Row>
-                <Col lg={{span:8, offset: 2}}>
+                <Col lg={{span:8, offset: 2}} className='text-center mb-5'>
                     <h2>OUR CRAZY BURGERS</h2>
-                    <p>
+                    <p className='para'>
                         Aliquam a augue suscipit, luctus neque purus ipsum neque undo 
                         dolor primis libero tempus, blandit a cursus various magna  
                     </p>
@@ -100,10 +123,30 @@ const mockData = [
                         title = {cardData.title}
                         paragraph = {cardData.paragraph}
                         price = {cardData.price}
-                        // renderRatingIcons = {renderRatingIcons}
+                        renderRatingIcons = {renderRatingIcons}
                         />                      
                     ))
                 }
+            </Row>
+            <Row className='pt-5'>
+              <Col sm={6} lg={5}>
+                <div className="ads_box ads_img1">
+                  <h4 className='mb-0'> GET YOUR FREE</h4>  
+                  <h5>CHEESE FRIES</h5>
+                  <Link to = "/"  className="btn btn_red px-4 rounded-0">
+                    Learn More 
+                  </Link>
+                </div>
+              </Col>
+              <Col sm={6} lg={7}>
+                <div className="ads_box ads_img2">
+                  <h4 className='mb-0'> GET YOUR FREE</h4>  
+                  <h5>CHEESE FRIES</h5>
+                  <Link to = "/"  className="btn btn_red px-4 rounded-0">
+                    Learn More 
+                  </Link>
+                </div>
+              </Col>
             </Row>
         </Container>  
     </section>

@@ -1,0 +1,47 @@
+/* Home Promotion  */
+
+.promotion_section{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--light-grey);
+}
+.promotion_section h2{
+    font-size: 3.25rem;
+    margin-bottom: 25px;
+}
+.promotion_section p{
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: var(--grey);
+}
+.promotion_section ul{
+    padding-left: 15px;
+}
+
+/* Home parallax 5.0 */
+.bg_parallax_scroll{
+    background: url('../assets//images/parallax/bg.jpg') no-repeat center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 700px;
+
+
+}
+
+@media (max-width: 1200px) {
+    /* Home promotion */
+    .promotion_section h2{
+        font-size: 2.25rem;
+    }
+}
+
+
+@media (max-width: 992px) {
+    /* Home parallax 5.0 */
+    .bg_parallax_scroll {
+        background-attachment: scroll;
+        height: 500px;
+    }
+
+}
