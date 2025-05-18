@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react'
-import Logo from '../../assets/images/logo/logo.png'
+import Logo from '../../assets/logo/logo.png'
 import '../../styles/HeaderStyle.css'
 import {Link} from 'react-router-dom'
 import {Container, Nav, Navbar} from 'react-bootstrap'
