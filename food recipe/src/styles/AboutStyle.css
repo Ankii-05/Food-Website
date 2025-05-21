@@ -1,0 +1,42 @@
+.about_section {
+  min-height: 100vh;
+  padding: 50px 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.about_section {
+  background-color: #f8f9fa;
+}
+
+.text-section h2 {
+  font-weight: 700;
+  color: #333;
+}
+
+.text-section p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+.image-section img {
+  max-width: 300px;
+  border: 5px solid #fff;
+}
+
+.TextArea{
+    text-align: center;
+    margin: 80px;
+}
+
+.chef-section {
+  text-align: center;
+}
+
+.chef-img {
+  height: 300px;
+  object-fit: cover;
+  border-bottom: 4px solid #ffb347;
+}

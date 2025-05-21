@@ -7,6 +7,9 @@ import {Container, Nav, Navbar} from 'react-bootstrap'
 const Header = () => {  
   const [nav , setNav] =useState(false)
 
+
+  
+
   //scroll navbar
   const changeValueOnScroll = ()=>{
     const scrollValue = document?.documentElement?.scrollTop;
