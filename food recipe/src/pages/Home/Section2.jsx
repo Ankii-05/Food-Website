@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import Pizza from "../../assets/about/pizza.png";
 import Salad from "../../assets/about/salad.png";
 import Delivery from "../../assets/about/delivery-bike.png";
-import './button.css'
+import '../../styles/button.css'
 
 // Mock Data Cards
 const mockData = [
