@@ -1,9 +1,29 @@
+
 import React from 'react'
+// import Section3 from '../Home/Section3'
+import '../../styles/Menu.css'
+import Image1 from "../../assets/menu/burger-11.jpg";
+import Image2 from "../../assets/menu/burger-12.jpg";
+import Image3 from "../../assets/menu/burger-13.jpg";
+import Image4 from "../../assets/menu/burger-14.jpg";
+import Image5 from "../../assets/menu/burger-15.jpg";
+import Image6 from "../../assets/menu/burger-16.jpg";
+import Image7 from "../../assets/menu/burger-17.jpg";
+import Image8 from "../../assets/menu/burger-18.jpg";
+import Cards from "../../component/Layout/Cards.jsx";
 import { Container, Row, Col } from 'react-bootstrap'
 function Section1() {
   // Mock Data Cards
   const mockData = [
+    
     {
+      id: "0006",
+      image: Image6,
+      title: "Veg Burger",
+      paragraph: "Turkey, cheddar cheese, onion, lettuce, tomatoes, pickles",
+      rating: 3.5,
+      price: 79.18,
+    },{
       id: "0001",
       image: Image1,
       title: "Crispy Chicken",
@@ -67,6 +87,31 @@ function Section1() {
       rating: 2.0,
       price: 89.12,
     },
+    {
+      id: "0001",
+      image: Image1,
+      title: "Ultimate Cheese",
+      paragraph: "Chicken breast, chilli sauce, tomatoes, pickles, coleslaw",
+      rating: 5,
+      price: 99.15,
+    },
+    {
+      id: "0003",
+      image: Image3,
+      title: "Aloo Tikki ",
+      paragraph: "American cheese, tomato relish, avocado, lettuce, red onion",
+      rating: 4,
+      price: 69.15,
+    },
+    {
+      id: "0007",
+      image: Image2,
+      title: "Smokey House",
+      paragraph: "patty, cheddar cheese, onion, lettuce, tomatoes, pickles",
+      rating: 2.5,
+      price: 99.19,
+    },
+    
     // Add more mock data objects as needed
   ];
   
@@ -87,11 +132,12 @@ function Section1() {
     }
     return stars;
   };
+  
   return (
-    <section>
-      <Container>
-      <Row>
-          <Col lg={{ span: 8, offset: 2 }} className="text-center mb-5">
+    <section  className='menu_section d-flex align-items-center '>
+      <Container  className=''>
+        <Row>
+          <Col lg={{ span: 8, offset: 2 }} className="text-center mt-5 mb-5">
             <h2>OUR CRAZY BURGERS</h2>
             <p className="para">
               Aliquam a augue suscipit, luctus neque purus ipsum neque undo
@@ -112,8 +158,13 @@ function Section1() {
             />
           ))}
         </Row>
-        </Container>
-    </section>
+        <hr />
+        <p className="para1 mb-0 pb-0 pt-0 ">
+              Welcome to <strong>Tasty Burger</strong>, where every burger tells a story! We craft mouthwatering, juicy burgers using the freshest ingredients and bold flavors. Whether you're a fan of classic cheeseburgers or adventurous gourmet creations, we've got something to satisfy your cravings. Come taste the difference!
+            </p>
+      </Container>
+    </section >
   )
 }
+
 export default Section1
