@@ -38,9 +38,6 @@ const Header = () => {
             <Nav.Link as={Link} to="/menu" >
               Our Menu
             </Nav.Link>
-            <Nav.Link as={Link} to="/shop" >
-              Shop
-            </Nav.Link>
             <Nav.Link as={Link} to="/blog" >
               Blog
             </Nav.Link>
@@ -49,8 +46,10 @@ const Header = () => {
             </Nav.Link>
             <Nav.Link as={Link} to="/" >
               <div className="cart">
+                <Nav.Link as={Link} to="/shop" >
                 <i className='bi bi-bag fs-5'></i>
-                <em className='roundpoint'>2</em>
+                <em className='  roundpoint'>2</em>
+                </Nav.Link>
               </div>
             </Nav.Link>
             

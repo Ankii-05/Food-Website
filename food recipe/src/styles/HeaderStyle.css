@@ -87,8 +87,8 @@ header .roundpoint{
     text-align: center;
     font-style: normal;
     position: absolute;
-    top: 3.2px;
-    right: -8px;
+    top: 0px;
+    right: 8px;
 }
 
 /* Media Queries CSS */

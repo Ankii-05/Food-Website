@@ -134,7 +134,7 @@ function Section1() {
   };
   
   return (
-    <section  className='menu_section d-flex align-items-center '>
+    <section  className='menu_section  d-flex align-items-center '>
       <Container  className=''>
         <Row>
           <Col lg={{ span: 8, offset: 2 }} className="text-center mt-5 mb-5">
